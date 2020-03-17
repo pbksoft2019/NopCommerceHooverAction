@@ -6,4 +6,4 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = ".", tags = "@hoover", plugin = {"pretty","html:target/Destination"}, strict = true )
-public class RunTest  {}
+public class RunTest {}

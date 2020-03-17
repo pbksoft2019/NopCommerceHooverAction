@@ -19,6 +19,6 @@ Feature: Category
 
     @hoover
   Scenario: user should be able to perform hoover action
-    When user hoover over category "Computers" link
-    And click on subcategory "Notebooks" link
-    Then user should be able to navigate to subcategory page "notebooks" successfully
+    When user hoover over category "Electronics" link
+    And click on subcategory "Others" link
+    Then user should be able to navigate to subcategory page "Others" successfully

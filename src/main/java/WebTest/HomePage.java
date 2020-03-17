@@ -21,7 +21,7 @@ public class HomePage extends Utils
     // method to hoover over category
     public void hooverOverCategoryLink(String category)
     {
-        WebElement link_category = driver.findElement( By.linkText( "Computers" ) ) ;
+        WebElement link_category = driver.findElement( By.linkText( category) ) ;
         Actions builder = new Actions(driver);
         Action mouseOverCategory = builder.moveToElement( link_category ).build();
         mouseOverCategory.perform();
@@ -29,7 +29,7 @@ public class HomePage extends Utils
     // method to click on subcategory link
     public void clickOnSubcategoryLink(String subcategory)
     {
-        clickOnElement( By.linkText( "Notebooks" ) );
+        clickOnElement( By.linkText( subcategory ) );
     }
     // verify user should be able to navigate to subcategory
     public void userShouldBeAbleToNavigateToSubcategoryPageSuccessfully(String subcategory)

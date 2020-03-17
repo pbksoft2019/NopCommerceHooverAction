@@ -33,7 +33,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user hoover over category \"Computers\" link",
+  "name": "user hoover over category \"Electronics\" link",
   "keyword": "When "
 });
 formatter.match({
@@ -43,7 +43,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click on subcategory \"Notebooks\" link",
+  "name": "click on subcategory \"Others\" link",
   "keyword": "And "
 });
 formatter.match({
@@ -53,13 +53,14 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should be able to navigate to subcategory page \"notebooks\" successfully",
+  "name": "user should be able to navigate to subcategory page \"Others\" successfully",
   "keyword": "Then "
 });
 formatter.match({
   "location": "WebTest.MyStepDefs.userShouldBeAbleToNavigateToSubcategoryPageSuccessfully(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat WebTest.Utils.assertURL(Utils.java:13)\r\n\tat WebTest.HomePage.userShouldBeAbleToNavigateToSubcategoryPageSuccessfully(HomePage.java:37)\r\n\tat WebTest.MyStepDefs.userShouldBeAbleToNavigateToSubcategoryPageSuccessfully(MyStepDefs.java:39)\r\n\tat ✽.user should be able to navigate to subcategory page \"Others\" successfully(file:///C:/Users/Prakash/IdeaProjects/NopCommerceHoover/./src/test/Resources/features/category.feature:24)\r\n",
+  "status": "failed"
 });
 });
